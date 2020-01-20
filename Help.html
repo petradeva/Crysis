@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <title>Help</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel = "icon" href="Media/Ea.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style2.css">
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="bg-black">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+	  <img width="40px" height="40px" src="img/Ea.png" style="position:relative;top:-10px">
+	  </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../Crysis.html">Home</a></li>
+        <li><a href="Help.html">Help</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Media.html">Media</a></li>
+ 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<hr>
+
+<hr>
+<div class="container-fluid text-center bg-black">
+  <br>
+  <div class="col-sm-12">
+  <div class="row slideanim">
+  <h2 align="center">ANSWER HQ</h2><br>
+		<h4 align="center">Get help from the community, find gameplay tips, and level up by answering player questions 24/7</h4>
+		<h4 align="center">Help With a Games or Manage Your Account</h4>
+		<button class="btn btn-default btn-lg" >Visit Community</button>
+        </div>
+
+    </div>
+	<div class="col-sm-12">
+  <div class="row slideanim">
+  <h2 align="center">Forum</h2><br>
+		<h4 align="center">Get help from the forum, find gameplay tips, and level up by answering player questions 24/7</h4>
+		<h4 align="center">If you encounter a problem feel free to visit us anytime</h4>
+		<button class="btn btn-default btn-lg" >Visit Forum</button>
+        </div>
+
+    </div>
+  </div>
+  <hr>
+  <div class="container-fluid text-center bg-black">
+  <br>
+  <div class="col-sm-12">
+  <div class="row slideanim">
+  <h2 align="center">Feel Free To Contact Us</h2><br>
+		<h4 align="center">Via Mail</h4>
+		<div class="col-sm-12">
+         
+        <img src="img/mi.png" alt="crysis3" width="100" height="100">      
+        
+    </div>
+		
+        </div>
+
+    </div>
+  </div>
+
+<div class="container-fluid bg-end">
+</div>
+
+
+<div class="container-fluid bg-grey">
+
+  <h1 class="text-center">Stay Up to Date</h1>
+  <div class="container-fluid bg-grey">
+<div class="col-sm-12">
+  <div class="text-center">
+  </div>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-2">
+         
+        <img src="img/fb.jpg" alt="crysis1" width="100" height="100">      
+       
+    </div>
+	<div class="col-sm-2">
+           
+        <img src="img/yt.png" alt="crysis2" width="100" height="100">      
+        
+    </div>
+	<div class="col-sm-2">
+         
+        <img src="img/mail.png" alt="crysis3" width="100" height="100">      
+        
+    </div>
+	<div class="col-sm-2">
+         
+        <img src="img/ig.png" alt="crysis4" width="100" height="100">      
+        
+    </div>
+	<div class="col-sm-2">
+          
+        <img src="img/g+.png" alt="crysis5" width="100" height="100">      
+        
+    </div>
+	<div class="col-sm-2">
+        
+        <img src="img/twit.png" alt="crysis6" width="100" height="100">      
+        
+    </div>
+    </div>
+  </div>
+  <hr>
+</div>  
+<div class="container-fluid bg-white">
+  <div class="row slideanim">
+    <div class="col-sm-3">
+		<img src="img/Ea.png" class="ea" height="100" width="100">
+    </div>
+	<div class="col-sm-3">
+		<h5><a href="Origin.html">Origin</a></h5>
+	</div>
+	<div>
+	<div class="col-sm-3">
+		<h5><a href="#">Games</a></h5>
+	</div>
+	<div>
+    <div class="col-sm-3">
+		<h5><a href="Help.html">Help</a></h5>
+	</div>
+	<div>
+  </div>
+</div>
+</div>
+</div>
+	<footer class="container-fluid text-center">
+		<p>Electronic Arts <a href="#">@2019</a></p>
+	</footer>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
